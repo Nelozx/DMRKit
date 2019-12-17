@@ -1,0 +1,27 @@
+{
+  "name": "DMRKit",
+  "version": "0.1.0",
+  "summary": "A short description of DMRKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/alistz/DMRKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "alistz": "nelozx@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/alistz/DMRKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DMRKit/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  }
+}

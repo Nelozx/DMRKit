@@ -1,0 +1,6 @@
+framework module DMRKit {
+  umbrella header "DMRKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
