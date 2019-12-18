@@ -48,6 +48,19 @@
     [super updateConstraints];
 }
 
+- (void)defaultSetup {
+    self.titleLabel.font = [UIFont systemFontOfSize:15];
+    self.backgroundColor = UIColor.blueColor;
+    [self setTitle:NSLocalizedString(@"登陆", nil) forState:UIControlStateNormal];
+}
+- (UIActivityIndicatorView *)activityIndicator
+{
+    if (_activityIndicator == nil) {
+        _activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        _activityIndicator.hidesWhenStopped = YES;
+    }
+    return _activityIndicator;
+}
 
 #pragma mark - Public
 - (void)startLoadingAnimation {
@@ -62,19 +75,6 @@
     [self setTitle:@"登录" forState:UIControlStateNormal];
 }
 
-- (void)defaultSetup {
-    self.titleLabel.font = [UIFont systemFontOfSize:15];
-    self.backgroundColor = UIColor.blueColor;
-    [self setTitle:@"登录" forState:UIControlStateNormal];
-}
-- (UIActivityIndicatorView *)activityIndicator
-{
-    if (_activityIndicator == nil) {
-        _activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-        _activityIndicator.hidesWhenStopped = YES;
-    }
-    return _activityIndicator;
-}
 
 
 @end
