@@ -35,11 +35,7 @@
 - (void)commonSetup {
     [self defaultSetup];
     [self addSubview: self.activityIndicator];
-    if (@available(iOS 6.0, *)) {
-        [self setNeedsUpdateConstraints];
-    } else {
-        // Fallback on earlier versions
-    }
+    [self setNeedsUpdateConstraints];
 }
 - (void)updateConstraints {
     [self.activityIndicator mas_makeConstraints:^(MASConstraintMaker *make) {
